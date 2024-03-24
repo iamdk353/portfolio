@@ -11,6 +11,7 @@ import gitHub from "../assets/github-mark.png";
 import cpp from "../assets/cpp.svg";
 import c from "../assets/c.svg";
 import py from "../assets/py.png";
+import django from "../assets/django.svg";
 const skills = [
   {
     src: express,
@@ -75,6 +76,11 @@ const skills = [
   {
     src: gitHub,
     name: "GitHub",
+    learning: true,
+  },
+  {
+    src: django,
+    name: "Django",
     learning: true,
   },
 ];
