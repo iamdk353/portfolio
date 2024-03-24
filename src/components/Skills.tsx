@@ -1,4 +1,4 @@
-import skills from "./iterators";
+import { skills } from "./iterators";
 
 const Skills = () => {
   return (

@@ -1,6 +1,6 @@
 import heroimg from "../assets/heroImg.png";
-import linkedin from "../assets/linkedin.png";
-import github from "../assets/github-mark.png";
+import { links } from "./iterators";
+
 const Hero = () => {
   return (
     <div
@@ -30,20 +30,21 @@ const Hero = () => {
             ever-evolving landscape of technology together.
           </p>
           <div className="mt-10 space-x-6">
-            <a href="" className="btn group hover:bg-zinc-800">
-              <img
-                src={linkedin}
-                alt="LinkedIn"
-                className="w-6 h-6 group-hover:invert"
-              />
-            </a>
-            <a href="" className="btn group hover:bg-zinc-800">
-              <img
-                src={github}
-                alt="GitHub"
-                className="w-6 h-6 group-hover:invert"
-              />
-            </a>
+            {links.map(({ src, to }) => {
+              return (
+                <a
+                  href={to}
+                  className="btn group hover:bg-zinc-800"
+                  target="_blank"
+                >
+                  <img
+                    src={src}
+                    alt="LinkedIn"
+                    className="w-6 h-6 group-hover:invert"
+                  />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

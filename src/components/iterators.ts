@@ -12,6 +12,9 @@ import cpp from "../assets/cpp.svg";
 import c from "../assets/c.svg";
 import py from "../assets/py.png";
 import django from "../assets/django.svg";
+import github from "../assets/github-mark.png";
+import mail from "../assets/gmail.svg";
+import linkedin from "../assets/linkedin.png";
 const skills = [
   {
     src: express,
@@ -84,5 +87,18 @@ const skills = [
     learning: true,
   },
 ];
-
-export default skills;
+const links = [
+  {
+    src: github,
+    to: "https://github.com/iamdk353",
+  },
+  {
+    src: linkedin,
+    to: "https://www.linkedin.com/in/dhanush-kumar-4a9b56247/",
+  },
+  {
+    src: mail,
+    to: "https://iamdk353@gmail.com",
+  },
+];
+export { skills, links };
