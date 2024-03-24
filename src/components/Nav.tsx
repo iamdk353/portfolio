@@ -22,23 +22,27 @@ const Nav = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, staggerChildren: 0.5 }}
+        transition={{ duration: 0.5, staggerChildren: 4 }}
       >
         <div className="navbar-center space-x-10 hidden md:flex">
-          <motion.div>
+          <motion.a>
             <a href="#Hero">Intro</a>
-          </motion.div>
-          <motion.div>
+          </motion.a>
+
+          <motion.a>
             <a href="#Skills">My Skills</a>
-          </motion.div>
-          <motion.div>
+          </motion.a>
+
+          <motion.a>
             <a href="#About">About Me</a>
-          </motion.div>
-          <motion.div>
+          </motion.a>
+
+          <motion.a>
             <a href="#Projects">Projects</a>
-          </motion.div>
+          </motion.a>
         </div>
       </motion.div>
+
       <div className="navbar-end">
         <div className=" md:hidden">
           <div className="dropdown dropdown-bottom dropdown-end">
