@@ -59,7 +59,12 @@ const skills = [
   {
     src: git,
     name: "GIT",
-    learning: true,
+    learning: false,
+  },
+  {
+    src: gitHub,
+    name: "GitHub",
+    learning: false,
   },
   {
     src: next,
@@ -74,11 +79,6 @@ const skills = [
   {
     src: tsIcon,
     name: "Type Script",
-    learning: true,
-  },
-  {
-    src: gitHub,
-    name: "GitHub",
     learning: true,
   },
   {

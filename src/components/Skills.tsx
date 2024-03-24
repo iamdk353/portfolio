@@ -2,7 +2,7 @@ import { skills } from "./iterators";
 
 const Skills = () => {
   return (
-    <div className="flex items-center my-4 flex-col" id="skills">
+    <div className="flex items-center my-10 flex-col" id="Skills">
       <p className="sora text-3xl">
         MY <span className="font-bold"> SKILLS</span>
       </p>

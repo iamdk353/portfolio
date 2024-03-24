@@ -1,7 +1,7 @@
 import about from "../assets/about.svg";
 const About = () => {
   return (
-    <div className="flex p-5 gap-10 mt-10 flex-col md:flex-row">
+    <div className="flex p-5 gap-10 mt-10 flex-col md:flex-row" id="About">
       <div className=" ">
         <img src={about} alt="" className="" />
       </div>

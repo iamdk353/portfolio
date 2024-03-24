@@ -1,4 +1,5 @@
 import download from "../assets/download.png";
+
 const Nav = () => {
   return (
     <div className="navbar bg-base-100">
@@ -13,10 +14,10 @@ const Nav = () => {
         </div>
       </div>
       <div className="navbar-center space-x-10 hidden md:flex">
-        <a href="">About Me</a>
-        <a href="">About Me</a>
-        <a href="">About Me</a>
-        <a href="">About Me</a>
+        <a href="#Hero">Intro</a>
+        <a href="#Skills">My Skills</a>
+        <a href="#About">About Me</a>
+        <a href="#Projects">Projects</a>
       </div>
       <div className="navbar-end">
         <div className=" md:hidden">
@@ -42,10 +43,17 @@ const Nav = () => {
               className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Item 1</a>
+                {" "}
+                <a href="#Hero">Intro</a>
               </li>
               <li>
-                <a>Item 3</a>
+                <a href="#Skills">My Skills</a>
+              </li>
+              <li>
+                <a href="#About">About Me</a>
+              </li>
+              <li>
+                <a href="#Projects">Projects</a>
               </li>
               <li>
                 <span className="bg-primary-black">

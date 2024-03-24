@@ -2,7 +2,7 @@ import working from "../assets/working.svg";
 import Project from "./Project";
 const Projects = () => {
   return (
-    <div className=" flex items-center flex-col mt-4">
+    <div className=" flex items-center flex-col mt-4" id="Projects">
       <p className="sora  text-4xl">
         My
         <span className="font-bold"> Projects</span>
