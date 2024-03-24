@@ -1,24 +1,44 @@
 import download from "../assets/download.png";
-
+import { motion } from "framer-motion";
 const Nav = () => {
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="p-3">
-            <p className="sora flex-1 hidden xl:flex font-semibold text-3xl">
-              DHANUSH KUMAR M
-            </p>
-            <p className="sora flex-1 flex xl:hidden ">DK</p>
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="p-3">
+              <p className="sora flex-1 hidden xl:flex font-semibold text-3xl">
+                DHANUSH KUMAR M
+              </p>
+              <p className="sora flex-1 flex xl:hidden ">DK</p>
+            </div>
           </div>
+        </motion.div>
+      </div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, staggerChildren: 0.5 }}
+      >
+        <div className="navbar-center space-x-10 hidden md:flex">
+          <motion.div>
+            <a href="#Hero">Intro</a>
+          </motion.div>
+          <motion.div>
+            <a href="#Skills">My Skills</a>
+          </motion.div>
+          <motion.div>
+            <a href="#About">About Me</a>
+          </motion.div>
+          <motion.div>
+            <a href="#Projects">Projects</a>
+          </motion.div>
         </div>
-      </div>
-      <div className="navbar-center space-x-10 hidden md:flex">
-        <a href="#Hero">Intro</a>
-        <a href="#Skills">My Skills</a>
-        <a href="#About">About Me</a>
-        <a href="#Projects">Projects</a>
-      </div>
+      </motion.div>
       <div className="navbar-end">
         <div className=" md:hidden">
           <div className="dropdown dropdown-bottom dropdown-end">
