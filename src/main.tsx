@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import "./index.css";
 import Skills from "./components/Skills";
+import About from "./components/About";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -13,10 +14,11 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 
 function App() {
   return (
-    <div className="p-3 md:p-10">
+    <div className="p-3 md:p-10 max-w-[2340px]">
       <Nav />
       <Hero />
       <Skills />
+      <About />
     </div>
   );
 }

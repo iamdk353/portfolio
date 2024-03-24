@@ -30,12 +30,13 @@ const Hero = () => {
             ever-evolving landscape of technology together.
           </p>
           <div className="mt-10 space-x-6">
-            {links.map(({ src, to }) => {
+            {links.map(({ src, to }, id) => {
               return (
                 <a
                   href={to}
                   className="btn group hover:bg-zinc-800"
                   target="_blank"
+                  key={id}
                 >
                   <img
                     src={src}

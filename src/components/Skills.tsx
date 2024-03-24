@@ -10,9 +10,13 @@ const Skills = () => {
         className="w-[80%] 3
        my-5 grid grid-cols-2 p-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-10"
       >
-        {skills.map(({ src, name, learning }) => {
+        {skills.map(({ src, name, learning }, id) => {
           return (
-            <div className={`${learning ? "tooltip" : ""}`} data-tip="learning">
+            <div
+              className={`${learning ? "tooltip" : ""}`}
+              data-tip="learning..."
+              key={id}
+            >
               <div
                 className={`size-[15vh] bg-white flex flex-col p-2 justify-center items-center p-5 border-black border cursor-default ${
                   learning ? "opacity-70 animate-pulse " : ""
