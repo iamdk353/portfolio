@@ -5,7 +5,9 @@ const Nav = () => {
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="p-3">
-            <p className="sora flex-1 hidden xl:flex">DHANUSH KUAMR M</p>
+            <p className="sora flex-1 hidden xl:flex font-semibold text-3xl">
+              DHANUSH KUMAR M
+            </p>
             <p className="sora flex-1 flex xl:hidden ">DK</p>
           </div>
         </div>

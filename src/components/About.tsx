@@ -3,7 +3,7 @@ const About = () => {
   return (
     <div className="flex p-5 gap-10 mt-10 flex-col md:flex-row">
       <div className=" ">
-        <img src={about} alt="" />
+        <img src={about} alt="" className="" />
       </div>
       <div className=" flex flex-1 flex-col ">
         <p className="mx-auto font-bold text-3xl sora">ABOUT ME</p>
