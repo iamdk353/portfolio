@@ -6,7 +6,6 @@ import "./index.css";
 import Skills from "./components/Skills";
 import About from "./components/About";
 import Projects from "./components/Projects";
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
