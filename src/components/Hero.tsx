@@ -3,14 +3,17 @@ import linkedin from "../assets/linkedin.png";
 import github from "../assets/github-mark.png";
 const Hero = () => {
   return (
-    <div className="flex flex-col flex-col-reverse md:flex-row mt-4 p-3 selection:bg-zinc-300">
+    <div
+      className="flex flex-col flex-col-reverse md:flex-row mt-4 p-3 selection:bg-zinc-300"
+      id="about"
+    >
       <div className="flex-1 flex justify-center items-center">
         <div className="sora text-xl md:text-3xl p-4  flex items-center flex-col ">
           <p className="mb-10">
             <span className="">Greetings, Fellow Tech</span>{" "}
             <span className="  font-bold sora">Enthusiast!</span>
           </p>
-          <p className="text-sm leading-6 md:text-xl text-zinc-600 md:leading-8">
+          <p className="text-sm leading-6 md:text-xl text-zinc-600 md:leading-8 line-clamp-[10]">
             I'm{" "}
             <span className="font-semibold text-zinc-700">DHANUSH KUMAR M</span>
             , a passionate web developer fueled by a relentless curiosity for
@@ -44,7 +47,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1 border-b-2 border-black mb-3">
+      <div className="flex-1 border-b-2 border-black mb-3 md:border-0">
         <img src={heroimg} alt="" />
       </div>
     </div>
