@@ -15,6 +15,12 @@ import django from "../assets/django.svg";
 import github from "../assets/github-mark.png";
 import mail from "../assets/gmail.svg";
 import linkedin from "../assets/linkedin.png";
+const nav = [
+  { href: "Hero", name: "Intro" },
+  { href: "#Skills", name: "Skills" },
+  { href: "#About", name: "About Me" },
+  { href: "#Projects", name: "Projects" },
+];
 const skills = [
   {
     src: express,
@@ -101,4 +107,4 @@ const links = [
     to: "https://iamdk353@gmail.com",
   },
 ];
-export { skills, links };
+export { skills, links, nav };

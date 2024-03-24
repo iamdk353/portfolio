@@ -1,12 +1,13 @@
 import download from "../assets/download.png";
 import { motion } from "framer-motion";
+import { nav } from "./iterators";
 const Nav = () => {
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
           <div className="dropdown">
@@ -19,30 +20,22 @@ const Nav = () => {
           </div>
         </motion.div>
       </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, staggerChildren: 4 }}
-      >
+      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <div className="navbar-center space-x-10 hidden md:flex">
-          <motion.a>
-            <a href="#Hero">Intro</a>
-          </motion.a>
-
-          <motion.a>
-            <a href="#Skills">My Skills</a>
-          </motion.a>
-
-          <motion.a>
-            <a href="#About">About Me</a>
-          </motion.a>
-
-          <motion.a>
-            <a href="#Projects">Projects</a>
-          </motion.a>
+          {nav.map(({ href, name }, id) => {
+            return (
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: id * 0.2 }}
+                key={id}
+              >
+                <a href={href}>{name}</a>
+              </motion.div>
+            );
+          })}
         </div>
       </motion.div>
-
       <div className="navbar-end">
         <div className=" md:hidden">
           <div className="dropdown dropdown-bottom dropdown-end">
