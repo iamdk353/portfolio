@@ -78,19 +78,20 @@ const Projects = () => {
             <div className="space-y-3">
               A Full stack todo app using MongoDB as the Data base Express for
               server side working
-              <br />
-              <a
-                href="https://iamdk353.github.io/todo-app/index.html"
-                className="btn btn-outline"
-              >
-                live demo
-              </a>
-              <a
-                href="https://iamdk353.github.io/todo-app/index.html"
-                className="btn btn-outline ml-3"
-              >
-                source Code
-              </a>
+              <div className="flex flex-row md:flex-col">
+                <a
+                  href="https://iamdk353.github.io/todo-app/index.html"
+                  className="btn btn-outline"
+                >
+                  live demo
+                </a>
+                <a
+                  href="https://iamdk353.github.io/todo-app/index.html"
+                  className="btn btn-outline ml-3"
+                >
+                  source Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
