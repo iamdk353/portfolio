@@ -85,7 +85,7 @@ const Projects = () => {
           desc={
             "This is my personal portfolio where I share my skills, experience,projects,and many more.. looking forward to add a testimonial section with real user feed back.."
           }
-          live={"https://portfolio-self-sigma-74.vercel.app/"}
+          live={"#"}
           source={"https://github.com/iamdk353/portfolio"}
         />
       </div>
