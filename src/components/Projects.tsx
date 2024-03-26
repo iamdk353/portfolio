@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { useEffect } from "react";
+import Project from "./Project";
 const Projects = () => {
   useEffect(() => {
     writeCode();
@@ -70,31 +71,23 @@ const Projects = () => {
         My
         <span className="font-bold"> Projects</span>
       </p>
-      <div className="w-full bg-primary p-5">
-        <div className="collapse bg-base-200 w-[90%] md:w-[50%] mx-auto">
-          <input type="checkbox" />
-          <div className="collapse-title text-xl font-medium">TODO APP</div>
-          <div className="collapse-content">
-            <div className="space-y-3">
-              A Full stack todo app using MongoDB as the Data base Express for
-              server side working
-              <div className="flex flex-row md:flex-col">
-                <a
-                  href="https://iamdk353.github.io/todo-app/index.html"
-                  className="btn btn-outline"
-                >
-                  live demo
-                </a>
-                <a
-                  href="https://iamdk353.github.io/todo-app/index.html"
-                  className="btn btn-outline ml-3"
-                >
-                  source Code
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="w-full bg-primary p-5 space-y-3">
+        <Project
+          name={"TODO APP"}
+          desc={
+            "a full stack todo app that uses Mongo DB as the database and I used Express for server-side development this is an api based application.looking forward to make it realtime using Sockets.."
+          }
+          live={"https://iamdk353.github.io/todo-app/index.html"}
+          source={"https://github.com/iamdk353/todo-app"}
+        />
+        <Project
+          name={"Personal Portfolio"}
+          desc={
+            "This is my personal portfolio where I share my skills, experience,projects,and many more.. looking forward to add a testimonial section with real user feed back.."
+          }
+          live={"https://portfolio-self-sigma-74.vercel.app/"}
+          source={"https://github.com/iamdk353/portfolio"}
+        />
       </div>
       <div className="flex flex-col ">
         <svg
