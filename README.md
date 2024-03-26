@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# DHANUSH KUMAR M's Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio repository! This repository serves as the codebase for my personal portfolio website.
+NOTE
+This code base is continually evolving and isn't open for contributions.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio showcases my skills, projects, and experiences. It's designed to provide visitors with an insight into who I am, what I do, and the work I've done.
 
-## Expanding the ESLint configuration
+## Table of Contents
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. [About Me](#about-me)
+2. [Portfolio](#portfolio)
+3. [Contact](#contact)
 
-- Configure the top-level `parserOptions` property like this:
+## About Me
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+I'm DHANUSH KUMAR M, a student passionate about Full stack. With [X] years of experience in the industry, I specialize in [Your Specialization]. Learn more about me in the [About](about.md) section.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Portfolio
+
+My portfolio showcases a selection of projects I've worked on. Each project includes a detailed case study outlining the problem, solution, and technologies used. Explore my portfolio [here](portfolio.md).
