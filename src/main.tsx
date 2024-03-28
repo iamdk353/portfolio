@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 
 function App() {
   return (
-    <div className="p-3 md:p-10 max-w-[2340px]">
+    <div className="p-3 md:p-10 max-w-[2340px] mx-auto space-y-[25vh]">
       <Nav />
       <Hero />
       <Skills />

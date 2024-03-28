@@ -35,7 +35,7 @@ const Hero = () => {
               ever-evolving landscape of technology together.
             </p>
 
-            <div className="mt-10 space-x-6">
+            <div className="mt-10  flex gap-4 flex-wrap">
               {links.map(({ src, to }, id) => {
                 return (
                   <a
@@ -46,7 +46,6 @@ const Hero = () => {
                   >
                     <img
                       src={src}
-                      alt="LinkedIn"
                       className="w-6 h-6 group-hover:invert"
                       width={500}
                       height={600}
