@@ -21,7 +21,7 @@ const nav = [
   { href: "#About", name: "About Me" },
   { href: "#Projects", name: "Projects" },
 ];
-const skills = [
+const skillsItr = [
   {
     src: express,
     name: "Express",
@@ -93,6 +93,20 @@ const skills = [
     learning: true,
   },
 ];
+interface Skill {
+  src: string;
+  name: string;
+  learning: boolean;
+}
+const sortSkillsByLearning = (skills: Skill[]): Skill[] => {
+  return skills.sort((a, b) => {
+    if (a.learning === b.learning) {
+      return a.name.localeCompare(b.name);
+    }
+    return a.learning ? 1 : -1;
+  });
+};
+
 const links = [
   {
     src: github,
@@ -107,4 +121,5 @@ const links = [
     to: "https://iamdk353@gmail.com",
   },
 ];
-export { skills, links, nav };
+let sorted: Skill[] = sortSkillsByLearning(skillsItr);
+export { sorted, links, nav };

@@ -1,6 +1,6 @@
 import Skill from "./Skill";
-import { skills } from "./iterators";
-// import { motion } from "framer-motion";
+import { sorted } from "./iterators";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
@@ -9,9 +9,21 @@ const Skills = () => {
         MY <span className="font-bold"> SKILLS</span>
       </p>
       <div className=" flex flex-wrap w-full justify-around gap-2 p-3 md:p-5">
-        {skills.map((i, id) => {
+        {sorted.map((i, id) => {
           return (
-            <Skill name={i.name} src={i.src} key={id} learning={i.learning} />
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.25, delay: id * 0.1 }}
+              key={id}
+            >
+              <div
+                className={i.learning ? "tooltip" : ""}
+                data-tip="Learning..."
+              >
+                <Skill name={i.name} src={i.src} learning={i.learning} />
+              </div>
+            </motion.div>
           );
         })}
       </div>

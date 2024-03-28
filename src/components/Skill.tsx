@@ -10,7 +10,7 @@ const Skill = ({
   return (
     <div
       className={`size-32 border border-black flex justify-center flex-col items-center cursor-default ${
-        learning ? "opacity-60 tooltip" : ""
+        learning ? "opacity-40 animate-pulse" : ""
       }`}
     >
       <img src={src} alt="" className="size-[50%]" />
