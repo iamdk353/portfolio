@@ -1,8 +1,10 @@
 import heroimg from "../assets/heroImg.png";
 import { links } from "./iterators";
 import download from "../assets/download.png";
+import { useState } from "react";
 
 const Hero = () => {
+  const [readMore, setRead] = useState(true);
   return (
     <>
       <div
@@ -16,24 +18,39 @@ const Hero = () => {
               <span className="  font-bold sora">Enthusiast!</span>
             </p>
 
-            <p className="text-sm leading-6 md:text-xl text-zinc-600 md:leading-8 line-clamp-[10]">
-              I'm{" "}
-              <span className="font-semibold text-zinc-700">
-                DHANUSH KUMAR M
+            <div>
+              <p
+                className={`text-sm leading-6 md:text-xl text-zinc-600 md:leading-8 ${
+                  !readMore ? "" : "line-clamp-[10] transition-all opacity-100"
+                }`}
+              >
+                I'm{" "}
+                <span className="font-semibold text-zinc-700">
+                  DHANUSH KUMAR M
+                </span>
+                , a passionate web developer fueled by a relentless curiosity
+                for all things digital. With a solid foundation in coding
+                languages such as HTML, CSS, and JavaScript, I embark on each
+                project with a sense of excitement and determination. My journey
+                in web development has been marked by a dedication to continuous
+                learning and a drive to push the boundaries of creativity and
+                innovation. From crafting sleek and responsive designs to
+                optimizing user experiences, I thrive on the challenges that
+                come with building dynamic web solutions. With a keen eye for
+                detail and a commitment to excellence, I strive to create
+                digital experiences that not only meet but exceed expectations.
+                Join me as we explore the ever-evolving landscape of technology
+                together.
+              </p>
+              <span
+                className="link text-xs"
+                onClick={() => {
+                  setRead((prev) => !prev);
+                }}
+              >
+                Show {!readMore ? "Less" : "More"}
               </span>
-              , a passionate web developer fueled by a relentless curiosity for
-              all things digital. With a solid foundation in coding languages
-              such as HTML, CSS, and JavaScript, I embark on each project with a
-              sense of excitement and determination. My journey in web
-              development has been marked by a dedication to continuous learning
-              and a drive to push the boundaries of creativity and innovation.
-              From crafting sleek and responsive designs to optimizing user
-              experiences, I thrive on the challenges that come with building
-              dynamic web solutions. With a keen eye for detail and a commitment
-              to excellence, I strive to create digital experiences that not
-              only meet but exceed expectations. Join me as we explore the
-              ever-evolving landscape of technology together.
-            </p>
+            </div>
 
             <div className="mt-10  flex gap-4 flex-wrap">
               {links.map(({ src, to }, id) => {

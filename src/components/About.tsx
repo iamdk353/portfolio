@@ -1,6 +1,8 @@
+import { useState } from "react";
 import about from "../assets/about.svg";
 import { motion } from "framer-motion";
 const About = () => {
+  const [readMore, setRead] = useState(true);
   return (
     <div className="flex p-5 gap-10 flex-col md:flex-row" id="About">
       <motion.div
@@ -19,7 +21,11 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <p className="sora text-sm md:text-xl leading-8 md:leading-10 line-clamp-[13]">
+          <p
+            className={`text-sm leading-6 md:text-xl text-zinc-600 md:leading-8 ${
+              !readMore ? "" : "line-clamp-[10] transition-all opacity-100"
+            }`}
+          >
             {" "}
             As a full-stack developer, my journey into the world of web
             development began in September 2023, and since then, I've been
@@ -36,6 +42,14 @@ const About = () => {
             to push the boundaries of what's possible in the ever-evolving
             landscape of web development.
           </p>
+          <span
+            className="link text-xs"
+            onClick={() => {
+              setRead((prev) => !prev);
+            }}
+          >
+            Show {!readMore ? "Less" : "More"}
+          </span>
         </motion.div>
       </div>
     </div>
