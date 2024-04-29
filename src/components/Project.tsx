@@ -17,8 +17,15 @@ const Project = ({
         <div className="space-y-3">
           {desc}
           <div className="flex flex-col md:flex-row mt-3">
-            <a href={live} className="btn btn-outline">
-              Visit
+            <a
+              href={live === "nolive" ? "" : live}
+              className={
+                live === "nolive"
+                  ? "btn  pointer-events-none opacity-70"
+                  : "btn btn-outline"
+              }
+            >
+              {live === "nolive" ? "No live Demo Availabel" : "Visit"}
             </a>
             <a href={source} className="btn btn-outline md:ml-3 mt-3 md:mt-0">
               Source Code

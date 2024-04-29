@@ -86,20 +86,20 @@ const Projects = () => {
           source={"https://github.com/iamdk353/todo-app"}
         /> */}
         <Project
+          name={"YouTube AD Skipper Extension"}
+          desc={
+            "This is a chromium based extension that skips the youtube skippable ads "
+          }
+          live={"nolive"}
+          source={"https://github.com/iamdk353/adskipper"}
+        />
+        <Project
           name={"Personal Portfolio"}
           desc={
             "This is my personal portfolio where I share my skills, experience,projects,and many more.. looking forward to add a testimonial section with real user feed back.."
           }
           live={"#"}
           source={"https://github.com/iamdk353/portfolio"}
-        />
-        <Project
-          name={"YouTube AD Skipper Extension"}
-          desc={
-            "This is a chromium based extension that skips the youtube skippable ads "
-          }
-          live={""}
-          source={"https://github.com/iamdk353/adskipper"}
         />
       </div>
       <div className="flex flex-col ">
