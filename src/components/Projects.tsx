@@ -93,6 +93,14 @@ const Projects = () => {
           live={"#"}
           source={"https://github.com/iamdk353/portfolio"}
         />
+        <Project
+          name={"YouTube AD Skipper Extension"}
+          desc={
+            "This is a chromium based extension that skips the youtube skippable ads "
+          }
+          live={""}
+          source={"https://github.com/iamdk353/adskipper"}
+        />
       </div>
       <div className="flex flex-col ">
         <svg
