@@ -85,14 +85,14 @@ const Projects = () => {
           live={"https://iamdk353.github.io/todo-app/index.html"}
           source={"https://github.com/iamdk353/todo-app"}
         /> */}
-        <Project
+        {/* <Project
           name={"YouTube AD Skipper Extension"}
           desc={
             "This is a chromium based extension that skips the youtube skippable ads "
           }
           live={"nolive"}
           source={"https://github.com/iamdk353/adskipper"}
-        />
+        /> */}
         <Project
           name={"Personal Portfolio"}
           desc={
