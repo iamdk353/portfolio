@@ -6,6 +6,7 @@ import "./index.css";
 import Skills from "./components/Skills";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
@@ -19,6 +20,7 @@ function App() {
       <Hero />
       <Skills />
       <About />
+      <Experience />
       <Projects />
     </div>
   );

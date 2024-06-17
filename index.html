@@ -1,35 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="lofi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./src/assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>DK Portfolio</title>
+    <style>
+      .sora {
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="./src/assets/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-  <title>DK Portfolio</title>
-  <style>
-    .sora {
-      font-family: "Sora", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-    }
+      * {
+        scroll-behavior: smooth;
+      }
 
-    * {
-      scroll-behavior: smooth;
-    }
+      *::selection {
+        background-color: #d4d4d8;
+      }
+    </style>
+  </head>
 
-    *::selection {
-      background-color: #d4d4d8;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
-
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

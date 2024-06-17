@@ -5,7 +5,7 @@ const Projects = () => {
   useEffect(() => {
     writeCode();
     runGears();
-  });
+  }, []);
   function runGears() {
     gsap.fromTo(
       "#gear1",
@@ -77,22 +77,6 @@ const Projects = () => {
         <span className="font-bold"> Projects</span>
       </p>
       <div className="w-full bg-primary p-5 space-y-3">
-        {/* <Project
-          name={"TODO APP"}
-          desc={
-            "a full stack todo app that uses Mongo DB as the database and I used Express for server-side development this is an api based application.looking forward to make it realtime using Sockets.."
-          }
-          live={"https://iamdk353.github.io/todo-app/index.html"}
-          source={"https://github.com/iamdk353/todo-app"}
-        /> */}
-        {/* <Project
-          name={"YouTube AD Skipper Extension"}
-          desc={
-            "This is a chromium based extension that skips the youtube skippable ads "
-          }
-          live={"nolive"}
-          source={"https://github.com/iamdk353/adskipper"}
-        /> */}
         <Project
           name={"Personal Portfolio"}
           desc={

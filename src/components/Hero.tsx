@@ -28,7 +28,7 @@ const Hero = () => {
                 <span className="font-semibold text-zinc-700">
                   DHANUSH KUMAR M
                 </span>
-                , a passionate web developer fueled by a relentless curiosity
+                {/* , a passionate web developer fueled by a relentless curiosity
                 for all things digital. With a solid foundation in coding
                 languages such as HTML, CSS, and JavaScript, I embark on each
                 project with a sense of excitement and determination. My journey
@@ -40,10 +40,14 @@ const Hero = () => {
                 detail and a commitment to excellence, I strive to create
                 digital experiences that not only meet but exceed expectations.
                 Join me as we explore the ever-evolving landscape of technology
-                together.
+                together. */}
+                ,im a passionate web developer fueled by technology related
+                things.I have solid understanding in coding , problem solving ,
+                web Development. Aspired to be a good Software Engineer,and
+                determined to work hard and smart to reach my goal
               </p>
               <span
-                className="link text-xs"
+                className="link text-xs sr-only"
                 onClick={() => {
                   setRead((prev) => !prev);
                 }}

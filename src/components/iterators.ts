@@ -80,12 +80,12 @@ const skillsItr = [
   {
     src: react,
     name: "React",
-    learning: true,
+    learning: false,
   },
   {
     src: tsIcon,
     name: "Type Script",
-    learning: true,
+    learning: false,
   },
   {
     src: django,
