@@ -1,8 +1,6 @@
-import { useState } from "react";
 import about from "../assets/about.svg";
 import { motion } from "framer-motion";
 const About = () => {
-  const [readMore, setRead] = useState(true);
   return (
     <div className="flex p-5 gap-10 flex-col md:flex-row" id="About">
       <motion.div
@@ -22,9 +20,8 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <p
-            className={`text-sm leading-6 md:text-xl text-zinc-600 md:leading-8 px-3 md:px-10  ${
-              !readMore ? "" : " transition-all opacity-100"
-            }`}
+            className={`text-sm leading-6 md:text-xl text-zinc-600 md:leading-8 px-3 md:px-10  
+              `}
           >
             {" "}
             Im a CS Undergrad at{" "}
@@ -43,14 +40,6 @@ const About = () => {
             be a good Software Engineer and im damn sure i'm gonna be a good
             Software Engineer one day...!!
           </p>
-          <span
-            className="link text-xs sr-only"
-            onClick={() => {
-              setRead((prev) => !prev);
-            }}
-          >
-            Show {!readMore ? "Less" : "More"}
-          </span>
         </motion.div>
       </div>
     </div>

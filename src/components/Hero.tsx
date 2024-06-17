@@ -1,14 +1,12 @@
 import heroimg from "../assets/heroImg.png";
 import { links } from "./iterators";
 import download from "../assets/download.png";
-import { useState } from "react";
 
 const Hero = () => {
-  const [readMore, setRead] = useState(true);
   return (
     <>
       <div
-        className="flex flex-col flex-col-reverse md:flex-row mt-4 p-3 relative"
+        className="flex  flex-col-reverse md:flex-row mt-4 p-3 relative"
         id="Hero"
       >
         <div className="flex-1 flex justify-center items-center">
@@ -20,9 +18,7 @@ const Hero = () => {
 
             <div>
               <p
-                className={`text-sm leading-6 md:text-xl text-zinc-600 md:leading-8 ${
-                  !readMore ? "" : "line-clamp-[10] transition-all opacity-100"
-                }`}
+                className={`text-sm leading-6 md:text-xl text-zinc-600 md:leading-8 `}
               >
                 I'm{" "}
                 <span className="font-semibold text-zinc-700">
@@ -46,14 +42,6 @@ const Hero = () => {
                 web Development. Aspired to be a good Software Engineer,and
                 determined to work hard and smart to reach my goal
               </p>
-              <span
-                className="link text-xs sr-only"
-                onClick={() => {
-                  setRead((prev) => !prev);
-                }}
-              >
-                Show {!readMore ? "Less" : "More"}
-              </span>
             </div>
 
             <div className="mt-10  flex gap-4 flex-wrap">
