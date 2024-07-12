@@ -80,7 +80,7 @@ const Projects = () => {
         <Project
           name={"Personal Portfolio"}
           desc={
-            "This is my personal portfolio where I share my skills, experience,projects,and many more.. looking forward to add a testimonial section with real user feed back.."
+            "This is my personal portfolio where I share my skills, experience,projects,and many more.. "
           }
           live={"#"}
           source={"https://github.com/iamdk353/portfolio"}

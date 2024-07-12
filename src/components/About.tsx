@@ -19,17 +19,15 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <p
-            className={`text-sm leading-6 md:text-xl text-zinc-600 md:leading-8 px-3 md:px-10  
+          <div
+            className={`text-sm leading-6 md:text-xl text-zinc-600 md:leading-8 px-3 md:px-10  cursor-default
+              
               `}
           >
             {" "}
-            Im a CS Undergrad at{" "}
-            <a href="https://sambhramit.com/" target="_blank">
-              Sambhram Institute Of Technology.
-            </a>
+            Im a CS Undergrad at Sambhram Institute Of Technology.
             {"  "}
-            Im a Freshman to the relm of Computer science . I always has been
+            Im a Freshman to this relm of Computer science . I always has been
             overwhelmed By looking at some one coding in vim or solving a DSA
             problem less than 15 mins and more things. But still i have
             determined to learn the concepts and stop being overwhelmed by
@@ -39,7 +37,7 @@ const About = () => {
             Hoisting... <br />I have came a long way and have a long journey to
             be a good Software Engineer and im damn sure i'm gonna be a good
             Software Engineer one day...!!
-          </p>
+          </div>
         </motion.div>
       </div>
     </div>
