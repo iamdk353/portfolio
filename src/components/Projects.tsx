@@ -78,6 +78,17 @@ const Projects = () => {
       </p>
       <div className="w-full bg-primary p-5 space-y-3">
         <Project
+          name={"Real time accident detection and notification system"}
+          desc={
+            "This is our hackthon project,It is a real time accident detection and notification system that detects accident from cctv footage and  updates about the accident in our website and further it  is notified to near by ambulance drivers "
+          }
+          live={"nolive"}
+          source={"https://github.com/iamdk353/accidentDetector"}
+          isHackthon={true}
+        >
+          <div className="">Hackthon</div>
+        </Project>
+        <Project
           name={"Personal Portfolio"}
           desc={
             "This is my personal portfolio where I share my skills, experience,projects,and many more.. "
