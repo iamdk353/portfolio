@@ -1,17 +1,18 @@
+// import ExpTab from "./ExpTab";
+
 import ExpTab from "./ExpTab";
 
 const Experience = () => {
   return (
-    <div>
-      <div className="mx-auto sora text-4xl w-full font-semibold flex justify-center">
+    <div className="flex flex-col items-center space-y-2">
+      <div className="text-4xl font-semibold w-full flex justify-center mx-auto sora">
         Experience
       </div>
-      <div className="w-full flex items-center p-5 flex-col border border-black mt-3 space-y-3  justify-center ">
-        <div className="sora text-black text-3xl ">Job Simulations</div>
+      <div className="w-[100%] h-[40vh] md:w-[70%] md:h-[30vh] bg-black p-3">
         <ExpTab
-          heading={"SkyScanner"}
-          info={"this is a info page where info is stored"}
-          btnName={"Advance engineering"}
+          heading={"Accenture"}
+          info={"this is  infp"}
+          btnName={"this is a btn name"}
         />
       </div>
     </div>
