@@ -2,7 +2,7 @@ import ExpTab from "./ExpTab";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col items-center space-y-2">
+    <div className="flex flex-col items-center space-y-2" id="experience">
       <p className="sora text-2xl font-bold">EXPERIENCE</p>
       <div className="w-full  p-4  grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-3">
         <ExpTab

@@ -70,6 +70,9 @@ const Nav = () => {
               <li>
                 <a href="#Projects">Projects</a>
               </li>
+              <li>
+                <a href="#experience">Experience</a>
+              </li>
               <li className="">
                 <span className="bg-primary-black ">
                   <img src={download} alt="" />
