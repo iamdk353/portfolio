@@ -24,6 +24,7 @@ const nav = [
   { href: "#Hero", name: "Intro" },
   { href: "#Skills", name: "Skills" },
   { href: "#About", name: "About Me" },
+  { href: "#experience", name: "Experience" },
   { href: "#Projects", name: "Projects" },
 ];
 const skillsItr = [
