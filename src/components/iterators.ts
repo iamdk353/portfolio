@@ -15,6 +15,11 @@ import django from "../assets/django.svg";
 import github from "../assets/github-mark.png";
 import mail from "../assets/gmail.svg";
 import linkedin from "../assets/linkedin.png";
+import redux from "../assets/redux.svg";
+import schadcn from "../assets/schadCn.svg";
+import axios from "../assets/axios.svg";
+import daisyui from "../assets/daisyui.svg";
+import java from "../assets/java.svg";
 const nav = [
   { href: "#Hero", name: "Intro" },
   { href: "#Skills", name: "Skills" },
@@ -92,6 +97,21 @@ const skillsItr = [
     name: "Django",
     learning: true,
   },
+  {
+    src: redux,
+    name: "Redux Toolkit",
+    learning: false,
+  },
+  {
+    src: java,
+    name: "Java",
+    learning: false,
+  },
+];
+const techItr = [
+  [mongo, express, react, node, redux, tsIcon, tailwind, schadcn, axios],
+  [mongo, express, react, node, tailwind, axios, daisyui, py],
+  [react, node, tailwind, daisyui],
 ];
 interface Skill {
   src: string;
@@ -122,4 +142,4 @@ const links = [
   },
 ];
 let sorted: Skill[] = sortSkillsByLearning(skillsItr);
-export { sorted, links, nav };
+export { sorted, links, nav, techItr };

@@ -18,29 +18,17 @@ const Hero = () => {
 
             <div>
               <p
-                className={`text-sm leading-6 md:text-xl text-zinc-600 md:leading-8 `}
+                className={`text-sm leading-6 md:text-xl text-zinc-600 md:leading-8 text-justify`}
               >
-                I'm{" "}
+                Hi, I'm{" "}
                 <span className="font-semibold text-zinc-700">
                   DHANUSH KUMAR M
                 </span>
-                {/* , a passionate web developer fueled by a relentless curiosity
-                for all things digital. With a solid foundation in coding
-                languages such as HTML, CSS, and JavaScript, I embark on each
-                project with a sense of excitement and determination. My journey
-                in web development has been marked by a dedication to continuous
-                learning and a drive to push the boundaries of creativity and
-                innovation. From crafting sleek and responsive designs to
-                optimizing user experiences, I thrive on the challenges that
-                come with building dynamic web solutions. With a keen eye for
-                detail and a commitment to excellence, I strive to create
-                digital experiences that not only meet but exceed expectations.
-                Join me as we explore the ever-evolving landscape of technology
-                together. */}
-                ,im a passionate web developer fueled by technology related
-                things.I have solid understanding in coding , problem solving ,
-                web Development. Aspired to be a good Software Engineer,and
-                determined to work hard and smart to reach my goal
+                {"  "} a dedicated web developer with a solid grasp of coding
+                principles, problem-solving strategies, and web development
+                technologies. I'm driven to succeed as a Software Engineer and
+                am focused on putting in the hard work and smart effort required
+                to reach my goal.
               </p>
             </div>
 
