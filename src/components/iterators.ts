@@ -20,6 +20,7 @@ import schadcn from "../assets/schadCn.svg";
 import axios from "../assets/axios.svg";
 import daisyui from "../assets/daisyui.svg";
 import java from "../assets/java.svg";
+import gemini from "../assets/gemini.svg";
 const nav = [
   { href: "#Hero", name: "Intro" },
   { href: "#Skills", name: "Skills" },
@@ -113,6 +114,7 @@ const techItr = [
   [mongo, express, react, node, redux, tsIcon, tailwind, schadcn, axios],
   [mongo, express, react, node, tailwind, axios, daisyui, py],
   [react, node, tailwind, daisyui],
+  [react, node, tsIcon, tailwind, gemini, daisyui],
 ];
 interface Skill {
   src: string;

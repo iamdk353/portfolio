@@ -79,6 +79,13 @@ const Projects = () => {
       </p>
       <div className="w-full bg-primary p-5 space-y-3">
         <Project
+          name="AI Recipie Generator"
+          desc="This is a mini project that uses AI and generates reicpies"
+          live="https://ai-recipie.vercel.app/"
+          source="https://github.com/iamdk353/Ai-recipie"
+          projNum={3}
+        ></Project>
+        <Project
           name="A Circular mailing system "
           desc="This is a side projects that uses webscrapping and Gmail to notify the subscribed users regaurding the latest circular that has been released in the VTU website"
           live="https://vtu-frontend-dhanush-kumars-projects.vercel.app/"
