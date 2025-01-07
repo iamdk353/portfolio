@@ -115,6 +115,8 @@ const techItr = [
   [mongo, express, react, node, tailwind, axios, daisyui, py],
   [react, node, tailwind, daisyui],
   [react, node, tsIcon, tailwind, gemini, daisyui],
+  [react, node, tailwind, schadcn],
+  // add new proj icons here
 ];
 interface Skill {
   src: string;

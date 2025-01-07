@@ -79,6 +79,13 @@ const Projects = () => {
       </p>
       <div className="w-full bg-primary p-5 space-y-3">
         <Project
+          name="Cerebro Flow an AI Landing Page"
+          desc="This project is where i learned about UI/UX figma to code conversion framer motion and Gsap"
+          live="https://cerebroflow.vercel.app/"
+          source="https://github.com/iamdk353/cerebroflow"
+          projNum={4}
+        ></Project>
+        <Project
           name="AI Recipie Generator"
           desc="This is a mini project that uses AI and generates reicpies"
           live="https://ai-recipie.vercel.app/"
