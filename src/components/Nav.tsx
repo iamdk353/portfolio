@@ -82,10 +82,15 @@ const Nav = () => {
             </ul>
           </div>
         </div>
-        <button className="btn hidden md:flex">
-          <p className=" md:flex">Resume</p>
-          <img src={download} alt="" />
-        </button>
+        <a
+          href="https://drive.google.com/file/d/1X0d2uZxA6qiMrf_pKVZwak7JCyHE55rF/view?usp=sharing"
+          target="_blank"
+        >
+          <button className="btn hidden md:flex">
+            <p className=" md:flex">Resume</p>
+            <img src={download} alt="" />
+          </button>
+        </a>
       </div>
     </div>
   );
